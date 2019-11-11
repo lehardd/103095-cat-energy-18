@@ -27,13 +27,13 @@
         <form class="selection__form form-select" action="https://echo.htmlacademy.ru" method="post">
           <h2 class="visually-hidden">Данные кота</h2>
           <label for="name" class="form-select__label">Имя:*</label>
-          <input type="text" name="name" id="name" value="Барсик" required class="form-select__text-input">
+          <input type="text" name="name" id="name" placeholder="Барсик" required class="form-select__text-input">
 
           <label for="name" class="form-select__label">Вес (кг):*</label>
-          <input type="text" name="weight" id="weight" value="7" required class="form-select__text-input">
+          <input type="text" name="weight" id="weight" placeholder="7" required class="form-select__text-input">
 
           <label for="name" class="form-select__label">Возраст (лет):</label>
-          <input type="text" name="age" id="age" value="7" class="form-select__text-input">
+          <input type="text" name="age" id="age" placeholder="7" class="form-select__text-input">
 
           <label for="purpose1" class="form-select__label">Похудение</label>
           <input type="radio" name="purpose" id="purpose1" checked class="form-select__radio-input">
@@ -47,15 +47,14 @@
           <h2 class="form-select__header">Контактные данные (владельца кота)</h2>
 
           <label for="name_master" class="form-select__label">E-mail:*</label>
-          <input type="text" name="name_master" id="name_master" value="kuklachev@gmail.com" required class="form-select__text-input">
+          <input type="email" name="name_master" id="name_master" placeholder="kuklachev@gmail.com" required class="form-select__text-input">
 
           <label for="name" class="form-select__label">Телефон:*</label>
-          <input type="text" name="phone" id="phone" value="8 (960) 900-60-90" required class="form-select__text-input">
+          <input type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required class="form-select__text-input">
 
           <h2 class="form-select__header">Комментарий</h2>
 
-          <textarea rows="5" name="comment" id="comment" class="form-select__comment">Расскажите обо всех повадках кота
-          </textarea>
+          <textarea rows="5" name="comment" id="comment" class="form-select__comment" placeholder="Расскажите обо всех повадках кота"></textarea>
 
           <h2 class="form-select__header">Дополнительно</h2>
 
@@ -71,7 +70,7 @@
 
           <input type="checkbox" name="vitamins" id="vitamins" class="form-select__checkbox">
           <label for="vitamins" class="form-select__label">Витамины</label>
-          <button type="submit" class="form-select__submit universal-button">Отправить заявку</button>
+          <button type="submit" class="form-select__submit button">Отправить заявку</button>
           <p class="form-select__footnote">* — Обязательные поля</p>
         </form>
       </section>

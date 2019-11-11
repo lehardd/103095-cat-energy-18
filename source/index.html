@@ -22,7 +22,7 @@
         <p class="promo__motivation">Занялся собой? Займись котом!</p>
         <img src="https://via.placeholder.com/240x260"  width="240" height="260" alt="Банка корма" class="promo__can"> <!-- возможно эта картинка будет фоном -->
         <h2 class="visually-hidden">подобрать программу</h2>
-        <a href="" class="promo__button universal-button">подобрать программу</a>
+        <a href="" class="promo__button button">подобрать программу</a>
       </section>
     </header>
     <main class="main">
@@ -60,21 +60,19 @@
       <section class="example">
         <h2 class="example__header">Живой пример</h2>
         <p class="example__about">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="example__stat">
-          5 кг
-          снижение веса <!--наверное это будет псевдоэлемент -->
-        </div>
-        <div class="example__stat">
-          60 дней
-          затрачено времени <!--наверное это будет псевдоэлемент -->
-        </div>
+        <ul class="example__stat stat">
+          <li class="stat__element">5 кг</li>
+          <li class="stat__description">снижение веса</li>
+        </ul>
+        <ul class="example__stat stat">
+          <li class="stat__element">60 дней</li>
+          <li class="stat__description">затрачено времени</li>
+        </ul>
         <p class="example__expenses">Затраты на питание: 15 000 руб.</p>
         <img src="https://via.placeholder.com/311x232"  width="311" height="232" alt="cat before" class="example__picture">
-        <label class="example__switch switch">
-          <input class="switch__checkbox" type="checkbox">
-          <span class="switch__slider"></span>
-          Было Стало <!--наверное это будет псевдоэлемент -->
-        </label>
+        <p class="example__checkbox-text">Было</p>
+        <button type="button" class="example__checkbox"></button>
+        <p class="example__checkbox-text">Стало</p>
       </section>
     </main>
     <footer class="footer">
