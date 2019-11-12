@@ -19,8 +19,70 @@
       </nav>
     </header>
 
+    <main class="main">
+      <section class="selection">
+        <h1 class="selection__header">Подбор программы</h1>
+        <p class="selection__text">Заполните анкету и мы подберем
+        программу питания для вашего кота</p>
+        <form class="selection__form form-select" action="https://echo.htmlacademy.ru" method="post">
+          <h2 class="visually-hidden">Данные кота</h2>
+          <label for="name" class="form-select__label">Имя:*</label>
+          <input type="text" name="name" id="name" placeholder="Барсик" required class="form-select__text-input">
+
+          <label for="weight" class="form-select__label">Вес (кг):*</label>
+          <input type="text" name="weight" id="weight" placeholder="7" required class="form-select__text-input">
+
+          <label for="age" class="form-select__label">Возраст (лет):</label>
+          <input type="text" name="age" id="age" placeholder="7" class="form-select__text-input">
+
+          <label for="purpose1" class="form-select__label">Похудение</label>
+          <input type="radio" name="purpose" id="purpose1" checked class="form-select__radio-input">
+
+          <label for="purpose2" class="form-select__label">Набор массы</label>
+          <input type="radio" name="purpose" id="purpose2" class="form-select__radio-input">
+
+          <label for="purpose3" class="form-select__label">Не знаю (Нужен ваш совет)</label>
+          <input type="radio" name="purpose" id="purpose3" class="form-select__radio-input">
+
+          <h2 class="form-select__header">Контактные данные (владельца кота)</h2>
+
+          <label for="name_master" class="form-select__label">E-mail:*</label>
+          <input type="email" name="name_master" id="name_master" placeholder="kuklachev@gmail.com" required class="form-select__text-input">
+
+          <label for="phone" class="form-select__label">Телефон:*</label>
+          <input type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required class="form-select__text-input">
+
+          <h2 class="form-select__header">Комментарий</h2>
+
+          <textarea rows="5" name="comment" id="comment" class="form-select__comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+
+          <h2 class="form-select__header">Дополнительно</h2>
+
+          <input type="checkbox" name="sweetener" id="sweetener" checked class="form-select__checkbox">
+          <label for="sweetener" class="form-select__label">Сахарозаменитель</label>
+
+          <input type="checkbox" name="water" id="water" class="form-select__checkbox">
+          <label for="water" class="form-select__label">Питьевая вода</label>
+
+          <input type="checkbox" name="milk" id="milk" class="form-select__checkbox">
+          <label for="milk" class="form-select__label">Молоко</label>
+
+          <input type="checkbox" name="vitamins" id="vitamins" class="form-select__checkbox">
+          <label for="vitamins" class="form-select__label">Витамины</label>
+          <button type="submit" class="form-select__submit button">Отправить заявку</button>
+          <p class="form-select__footnote">* — Обязательные поля</p>
+        </form>
+      </section>
+    </main>
 
     <footer class="footer">
+      <h2 class="footer__header">приглашаем к сотрудничеству дилеров!</h2>
+      <address class="footer__address">ул. Большая Конюшенная, д. 19/8
+      Санкт-Петербург</address>
+      <div class="footer__map">
+        <!-- тут будет карта вместо дива-->
+      </div>
+
       <a href="index.html" class="footer__logo-link">
         <img src="https://via.placeholder.com/102x18"  width="102" height="18" alt="Cat Energy" class="logo footer__logo">
       </a>
