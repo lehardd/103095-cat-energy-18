@@ -13,11 +13,15 @@
 }
 
 .catalog__item {
-  border: 1px solid rgb(237, 237, 237);//накладываются, потом исправлю
+  border: 1px solid rgb(237, 237, 237);
+  border-bottom: none;
   padding: 24px 20px;
   padding-top: 0;
   display: flex;
   flex-wrap: wrap;
+}
+.catalog__item:last-child {
+  border-bottom: 1px solid rgb(237, 237, 237);
 }
 
 .catalog__button {
