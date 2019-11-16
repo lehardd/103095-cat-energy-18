@@ -35,16 +35,16 @@
 
           <label for="age" class="form-select__label">Возраст (лет):</label>
           <input type="text" name="age" id="age" placeholder="7" class="form-select__text-input">
+          <div class="form-select__radio">
+            <label for="purpose1" class="form-select__label">Похудение</label>
+            <input type="radio" name="purpose" id="purpose1" checked class="form-select__radio-input">
 
-          <label for="purpose1" class="form-select__label">Похудение</label>
-          <input type="radio" name="purpose" id="purpose1" checked class="form-select__radio-input">
+            <label for="purpose2" class="form-select__label">Набор массы</label>
+            <input type="radio" name="purpose" id="purpose2" class="form-select__radio-input">
 
-          <label for="purpose2" class="form-select__label">Набор массы</label>
-          <input type="radio" name="purpose" id="purpose2" class="form-select__radio-input">
-
-          <label for="purpose3" class="form-select__label">Не знаю (Нужен ваш совет)</label>
-          <input type="radio" name="purpose" id="purpose3" class="form-select__radio-input">
-
+            <label for="purpose3" class="form-select__label">Не знаю (Нужен ваш совет)</label>
+            <input type="radio" name="purpose" id="purpose3" class="form-select__radio-input">
+          </div>
           <h2 class="form-select__header">Контактные данные (владельца кота)</h2>
 
           <label for="name_master" class="form-select__label">E-mail:*</label>
@@ -77,9 +77,11 @@
     </main>
 
     <footer class="footer">
-      <h2 class="footer__header">приглашаем к сотрудничеству дилеров!</h2>
-      <address class="footer__address">ул. Большая Конюшенная, д. 19/8
-      Санкт-Петербург</address>
+        <div class="footer__wrapper footer__wrapper--grey">
+            <h2 class="footer__header">приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+            <address class="footer__address">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8
+          Санкт-Петербург</address>
+        </div>
       <div class="footer__map">
         <!-- тут будет карта вместо дива-->
       </div>
