@@ -15,10 +15,10 @@
   padding-top: 0;
   display: flex;
   flex-wrap: wrap;
+}
 
-  //&:last-child {
-  //  border-bottom: 1px solid #ededed;
-  //}
+.catalog__link {
+  text-decoration: none;
 }
 
 .catalog__name {
@@ -28,8 +28,9 @@
   color: @black-color;
   padding-top: 20px;
   text-transform: uppercase;
-  //width: 100px;
+  margin: 0;
   margin-bottom: 13px;
+  width: 75px;
 }
 
 .catalog__button {
@@ -39,6 +40,76 @@
   padding-top: 10px;
 }
 
-.catalog__link {
-  text-decoration: none;
+@media (min-width: @tablet-width) {
+  .catalog {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .catalog__header {
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    width: 324px;
+    min-height: 431px;
+    display: block;
+    border: none;
+    margin-top: 140px;
+    background-color: @background-color-additional;
+    padding-top: 160px;
+    padding-left: 38px;
+    padding-right: 37px;
+    padding-bottom: 40px;
+    position: relative;
+  }
+
+  .catalog__more {
+    margin-top: 140px;
+  }
+
+  .catalog__picture {
+    position: absolute;
+    top: -44px;
+    left: 50%;
+    margin-left: -70px;
+  }
+
+  .catalog__name {
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+    padding: 0;
+    width: 125px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+  .catalog__table {
+    margin-bottom: 33px;
+  }
+
+  .catalog__button {
+    width: auto; // возможно это стоит вынести в button, потом проверю
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .catalog__item {
+    width: 245px;
+    min-height: 80px;
+  }
 }

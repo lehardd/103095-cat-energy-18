@@ -2,13 +2,15 @@
   border: 1px solid #ededed;
   min-height: 210px;
   padding-top: 80px;
+  //display: flex;
+  //flex-direction: column;
 }
 
 .more__goods {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #111111;
+  color: @black-color;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 10px;
@@ -17,7 +19,7 @@
 .more__taste {
   font-family: @font-family-additional;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.33;
   text-align: center;
   color: @greyish-brown-color;
   margin-bottom: 20px;
@@ -28,4 +30,38 @@
   margin: 0 auto;
   color: @greyish-brown-color;
   padding-top: 10px;
+  //margin-top: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .more {
+    width: 324px;
+    min-height: 431px;
+    padding: 38px;
+    padding-top: 160px;
+  }
+
+  .more__goods {
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+
+  .more__taste {
+    font-size: 16px;
+    line-height: normal;
+    margin-bottom: 80px;
+    padding: 0;
+  }
+
+  .more__button {
+    width: auto; // скорее всего вынесу в button
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .more {
+    width: 245px;
+    min-height: 80px;
+  }
 }

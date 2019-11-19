@@ -31,3 +31,63 @@
   line-height: 1.29;
   padding-top: 12px;
 }
+
+
+@media (min-width: @tablet-width) {
+  .promo {
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center 250px;
+    padding-left: 120px;
+    min-height: 860px;
+  }
+
+  .promo__header {
+    width: 530px;
+    font-size: 60px;
+    color: @black-color;
+    font-weight: normal;
+    text-align: left;
+  }
+
+  .promo__motivation {
+    font-size: 20px;
+    color: @black-color;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+
+  .promo__button {
+    width: 245px;
+    height: 52px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1;
+    padding: 0;
+    padding-top: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 560px 142px, 720px 0;
+    min-height: 696px;
+    padding-top: 222px;
+    padding-left: 190px;
+  }
+
+  .promo__header {
+    width: 420px;
+    margin: 0;
+    margin-bottom: 41px;
+    padding-left: 1px;
+  }
+
+  .promo__motivation {
+    margin-bottom: 52px;
+    padding-left: 1px;
+  }
+}
