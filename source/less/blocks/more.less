@@ -2,18 +2,22 @@
   border: 1px solid #ededed;
   min-height: 210px;
   padding-top: 80px;
-  //display: flex;
-  //flex-direction: column;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
 }
 
 .more__goods {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+  font-weight: normal;
   color: @black-color;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .more__taste {
@@ -22,40 +26,43 @@
   line-height: 1.33;
   text-align: center;
   color: @greyish-brown-color;
-  margin-bottom: 20px;
+  margin: 0;
+  //margin-bottom: 20px;
+  margin-bottom: auto;
 }
 
 .more__button {
   background-color: @background-color-additional;
   margin: 0 auto;
   color: @greyish-brown-color;
-  padding-top: 10px;
-  //margin-top: auto;
+  padding-top: 12px;
+  width: 100%;
 }
 
 @media (min-width: @tablet-width) {
   .more {
     width: 324px;
-    min-height: 431px;
+    min-height: 432px;
     padding: 38px;
-    padding-top: 160px;
+    padding-top: 165px;
+    padding-bottom: 40px;
   }
 
   .more__goods {
     font-size: 20px;
     line-height: 1;
-    margin-bottom: 20px;
+    width: 140px;
+    margin: 0 auto;
+    margin-bottom: 25px;
   }
 
   .more__taste {
     font-size: 16px;
     line-height: normal;
-    margin-bottom: 80px;
+    margin: 0 auto;
+    margin-bottom: auto;
     padding: 0;
-  }
-
-  .more__button {
-    width: auto; // скорее всего вынесу в button
+    width: 170px;
   }
 }
 

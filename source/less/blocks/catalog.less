@@ -5,7 +5,8 @@
   line-height: 1.67;
   color: @black-color;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 18px;
+  margin-bottom: 26px;
 }
 
 .catalog__item {
@@ -21,6 +22,10 @@
   text-decoration: none;
 }
 
+.catalog__picture {
+  display: block;
+}
+
 .catalog__name {
   font-size: 16px;
   font-weight: normal;
@@ -34,6 +39,7 @@
 }
 
 .catalog__button {
+  margin-top: auto;
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
@@ -49,9 +55,13 @@
   .catalog__header {
     font-size: 60px;
     line-height: 1;
+    margin-top: 75px; //60
+    margin-bottom: 20px; //160
+    padding: 0;
   }
 
   .catalog__list {
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -60,11 +70,12 @@
   .catalog__item {
     width: 324px;
     min-height: 431px;
-    display: block;
+    flex-direction: column;
     border: none;
     margin-top: 140px;
+    //margin-bottom: 140px;
     background-color: @background-color-additional;
-    padding-top: 160px;
+    padding-top: 165px;
     padding-left: 38px;
     padding-right: 37px;
     padding-bottom: 40px;
@@ -87,9 +98,9 @@
     line-height: 1;
     text-align: center;
     padding: 0;
-    width: 125px;
+    width: 130px;
     margin: 0 auto;
-    margin-bottom: 25px;
+    margin-bottom: 19px;
   }
 
   .catalog__table {
@@ -97,8 +108,10 @@
   }
 
   .catalog__button {
-    width: auto; // возможно это стоит вынести в button, потом проверю
+    width: 100%; // возможно это стоит вынести в button, потом проверю
     margin: 0 auto;
+    margin-top: auto;
+    padding-top: 12px;
   }
 }
 
@@ -108,8 +121,13 @@
     padding-right: 110px;
   }
 
+  .catalog__header {
+    margin-top: 95px;
+  }
+
   .catalog__item {
     width: 245px;
-    min-height: 80px;
+    min-height: 431px;
+    margin-top: 142px;
   }
 }
