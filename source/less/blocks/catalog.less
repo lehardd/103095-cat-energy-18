@@ -5,7 +5,8 @@
   line-height: 1.67;
   color: @black-color;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 18px;
+  margin-bottom: 26px;
 }
 
 .catalog__item {
@@ -15,10 +16,14 @@
   padding-top: 0;
   display: flex;
   flex-wrap: wrap;
+}
 
-  //&:last-child {
-  //  border-bottom: 1px solid #ededed;
-  //}
+.catalog__link {
+  text-decoration: none;
+}
+
+.catalog__picture {
+  display: block;
 }
 
 .catalog__name {
@@ -28,17 +33,101 @@
   color: @black-color;
   padding-top: 20px;
   text-transform: uppercase;
-  //width: 100px;
+  margin: 0;
   margin-bottom: 13px;
+  width: 75px;
 }
 
 .catalog__button {
+  margin-top: auto;
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
   padding-top: 10px;
 }
 
-.catalog__link {
-  text-decoration: none;
+@media (min-width: @tablet-width) {
+  .catalog {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .catalog__header {
+    font-size: 60px;
+    line-height: 1;
+    margin-top: 75px; //60
+    margin-bottom: 20px; //160
+    padding: 0;
+  }
+
+  .catalog__list {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    width: 324px;
+    min-height: 431px;
+    flex-direction: column;
+    border: none;
+    margin-top: 140px;
+    //margin-bottom: 140px;
+    background-color: @background-color-additional;
+    padding-top: 165px;
+    padding-left: 38px;
+    padding-right: 37px;
+    padding-bottom: 40px;
+    position: relative;
+  }
+
+  .catalog__more {
+    margin-top: 140px;
+  }
+
+  .catalog__picture {
+    position: absolute;
+    top: -44px;
+    left: 50%;
+    margin-left: -70px;
+  }
+
+  .catalog__name {
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+    padding: 0;
+    width: 130px;
+    margin: 0 auto;
+    margin-bottom: 19px;
+  }
+
+  .catalog__table {
+    margin-bottom: 33px;
+  }
+
+  .catalog__button {
+    width: 100%; // возможно это стоит вынести в button, потом проверю
+    margin: 0 auto;
+    margin-top: auto;
+    padding-top: 12px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .catalog__header {
+    margin-top: 95px;
+  }
+
+  .catalog__item {
+    width: 245px;
+    min-height: 431px;
+    margin-top: 142px;
+  }
 }
