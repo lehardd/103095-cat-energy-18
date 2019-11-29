@@ -1,19 +1,20 @@
-.footer__grey {
-  background-color: @background-color-additional;
-  padding-top: 39px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+.footer__wrapper {
+  min-height: 114px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-right: 25px;
+  padding-left: 19px;
+  padding-bottom: 25px;
+  background-color: @background-color-base;
 
-.footer__logo-link {
-  display: block;
-  width: 128px;
-  height: 24px;
-  margin: 0 auto;
-  margin-bottom: 30px;
+  &--grey {
+    background-color: @background-color-additional;
+  }
 }
 
 .footer__header {
+  margin: 0;
   width: 123px;
   display: block;
   font-size: 16px;
@@ -34,25 +35,109 @@
   color: @greyish-brown-color;
 }
 
-.footer__wrapper {
-  min-height: 114px;
-  display: flex;
-  justify-content: space-around;
-  background-color: @background-color-base;
-
-  &--grey {
-    background-color: @background-color-additional;
-  }
-}
-
 .footer__map {
   min-height: 362px;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-position: 0 -38px;
   background-repeat: no-repeat;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 53px;
+    height: 53px;
+    left: 129px;
+    top: 139px;
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-size: 62px;
+  }
+}
+
+.footer__grey { // !
+  background-color: @background-color-additional;
+  padding-top: 39px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer__logo-link {
+  display: block;
+  width: 128px;
+  height: 24px;
+  margin: 0 auto;
+  margin-bottom: 31px;
+}
+
+.social__image {
+  //display: block;
+  width: 17px;
+  height: 17px;
+}
+
+.social__image--vk {
+  width: 22px;
+  height: 12px;
+}
+
+.social__image--fb {
+  width: 10px;
+  height: 19px;
+}
+
+.footer__logo {
+  display: block;
+}
+
+.copyright__logo-image {
+  display: block;
+  width: 27px;
+  height: 34px;
+  border: 1px solid red; //поправить размер
 }
 
 @media (min-width: @tablet-width) {
+  .footer__wrapper {
+    min-height: 201px;
+    padding-top: 63px;
+    padding-right: 72px;
+    padding-left: 71px;
+    padding-bottom: 40px;
+  }
+
+  .footer__header {
+    width: 154px;
+    font-size: 20px;
+    padding-top: 3px;
+  }
+
+  .footer__address {
+    width: 155px;
+    text-align: right;
+    font-size: 16px;
+    line-height: 1.25;
+
+    &:first-child {
+      margin-bottom: 20px;
+    }
+  }
+
+  .footer__map {
+    min-height: 396px;
+    background-image: url("../img/bg-map-tablet@1x.png");
+    background-position: 0 -4px;
+
+    &::after {
+      width: 113px;
+      height: 106px;
+      left: 322px;
+      top: 146px;
+      background-size: auto;
+    }
+  }
+
   .footer__grey {
     display: flex;
     justify-content: space-between;
@@ -62,9 +147,56 @@
   .footer__logo-link {
     margin: 0;
   }
+
+  .social__image {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__image--vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__image--fb {
+    width: 14px;
+    height: 28px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .footer {
+    position: relative;
+  }
+
+  .footer__wrapper {
+    width: 570px;
+    min-height: 201px;
+    padding-top: 63px;
+    padding-right: 90px;
+    padding-left: 76px;
+    padding-bottom: 40px;
+    position: absolute;
+    z-index: 1;
+    left: 110px;
+    top: 95px;
+  }
+
+  .footer__address {
+    text-align: left;
+  }
+
+  .footer__map {
+    min-height: 400px;
+    background-image: url("../img/bg-map-desktop@1x.png");
+    background-position: 0 0;
+
+    &::after {
+      left: 998px;
+      top: 150px;
+    }
+  }
+
   .footer__grey {
     padding-left: 110px;
     padding-right: 110px;

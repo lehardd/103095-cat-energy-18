@@ -8,7 +8,7 @@
   min-height: 266px;
   width: 280px;
   background-color: @background-color-additional;
-  padding-top: 10px;
+  padding-top: 32px;
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 20px;
@@ -21,7 +21,7 @@
   padding-left: 70px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .program__text {
@@ -30,9 +30,9 @@
   line-height: 1.29;
   color: @greyish-brown-color;
   border-bottom: 1px solid @border-color;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .program__link {
@@ -44,6 +44,12 @@
 }
 
 @media (min-width: @tablet-width) {
+  .program {
+    padding-top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .program__variant {
     min-height: 372px;
     width: 708px;
@@ -55,25 +61,41 @@
     font-size: 36px;
     line-height: 1.03;
     padding: 0;
-    margin-bottom: 22px;
+    margin-bottom: 23px;
   }
 
   .program__text {
-    width: 372px; //исправить
+    width: 372px;
     font-size: 16px;
     line-height: 1.5;
     margin: 0;
     border: none;
-    margin-bottom: 37px;
+    margin-bottom: 36px;
 
     &--mass {
       width: 340px;
     }
   }
 
-  .program__link { //возможно его лучше сделать через absolute
+  .program__link {
     font-size: 20px;
     margin-left: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 24px;
+      height: 11px;
+      background-image: url("../img/icon-right-arrow-long.svg"); //цвет другой
+      left: 131px;
+      top: 8px;
+    }
+
+    &--mass::before { // надеюсь, что так можно в рамках интенсива
+      left: 126px;
+    }
   }
 }
 

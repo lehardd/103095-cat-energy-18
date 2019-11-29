@@ -5,22 +5,23 @@
 .stat__element {
   width: 124px;
   min-height: 56px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid @pinkish-grey;
+  border-radius: 3px;
   font-size: 24px;
   font-weight: normal;
   line-height: 1;
   text-align: center;
   color: @black-color;
   text-transform: uppercase;
-  padding-top: 12px;
+  padding-top: 14px;
 }
 
 .stat__description {
   position: absolute;
   width: 87px;
   min-height: 21px;
-  top: 45px;
-  left: -20px;
+  top: 47px;
+  left: -22px;
   background-color: @background-color-additional;
   font-family: @font-family-additional;
   font-size: 12px;
@@ -28,6 +29,29 @@
   line-height: 1;
   text-align: center;
   color: @greyish-brown-color;
-  padding-left: 1px;
-  padding-right: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+@media (min-width: @tablet-width) {
+  .stat__element {
+    width: 162px;
+    height: 72px;
+    font-size: 30px;
+    line-height: 1.23;
+  }
+
+  .stat__description {
+    width: 142px;
+    min-height: 27px;
+    background-color: @background-color-base;
+    font-size: 14px;
+    top: 63px;
+    left: -30px;
+
+    &--weight {
+      width: 114px;
+      left: -17px;
+    }
+  }
 }

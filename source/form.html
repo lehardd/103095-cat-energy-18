@@ -10,7 +10,11 @@
     <header class="header">
       <nav class="nav">
         <a href="index.html" class="nav__logo-link">
-          <img src="https://via.placeholder.com/191x39"  width="191" height="39" alt="Cat Energy" class="logo">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg"  width="191" height="39" alt="Cat Energy" class="nav__logo-image">
+          </picture>
         </a>
         <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="nav__list">

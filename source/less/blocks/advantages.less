@@ -1,4 +1,5 @@
 .advantages {
+  padding-top: 0;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -6,7 +7,7 @@
 .advantages__header {
   font-size: 36px;
   font-weight: normal;
-  line-height: 1.67;
+  line-height: 1.6;
   color: @black-color;
   margin: 0;
   margin-bottom: 30px;
@@ -23,19 +24,24 @@
   font-size: 14px;
   line-height: 1.29;
   color: @greyish-brown-color;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
+
+  &:last-child {
+    margin-bottom: 45px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .advantages {
     padding-left: 30px;
     padding-right: 30px;
-    border-bottom: 1px solid #e6e6e6; // цвет проверить, и маргины мешают.
+    border-bottom: 1px solid #e6e6e6; // цвет проверить.
   }
 
   .advantages__header {
     font-size: 60px;
     line-height: 1;
+    margin-top: 47px;
     margin-bottom: 70px;
   }
 
@@ -54,6 +60,11 @@
     padding-top: 95px;
     padding-right: 60px;
     margin-bottom: 77px;
+
+    //&:last-child,
+    &:nth-last-child(-n+2) {
+      margin-bottom: 45px;
+    }
   }
 }
 
